@@ -2,9 +2,9 @@ import joblib
 import pandas as pd
 from src.data_preprocessing import data_preprocessing
 
-pipline = joblib.load("../model/loan_model.pkl")
+pipline = joblib.load("model/loan_model.pkl")
 
-data, loan_id = data_preprocessing("../DataFrame/test.csv")
+data, loan_id = data_preprocessing("DataFrame/test.csv")
 
 prediction = pipline.predict(data)
 
@@ -13,4 +13,4 @@ prognosis = pd.DataFrame({
     "Approved": prediction
 })
 
-prognosis.to_csv("../prognosis.csv", index=False)
+prognosis.to_csv("prognosis.csv", index=False)

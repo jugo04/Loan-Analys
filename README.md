@@ -22,9 +22,9 @@ src/ # Code for processing and building the model
 /data_preprocessing.py  
 /pipeline.py  
 /model_utils.py  
-/model/ # Saved models or results  
-scripts/ # Scripts for running the model or evaluation  
+/model/ # Saved models or results   
 EDA.py # Exploratory Data Analysis (EDA)  
+predict.py # makes predictions on new data  
 prognosis.csv # Prediction results
 
 ## Results
