@@ -17,15 +17,16 @@ The dataset includes gender, marital status, education, number of dependents, in
 - Researched the impact of **threshold tuning** and **feature engineering** on prediction quality
 
 ## Project Structure
-data/ # Input data (train/test CSV)  
-src/ # Code for processing and building the model  
-/data_preprocessing.py  
-/pipeline.py  
-/model_utils.py  
-/model/ # Saved models or results   
-EDA.py # Exploratory Data Analysis (EDA)  
-predict.py # makes predictions on new data  
-prognosis.csv # Prediction results
+├── DataFrame/ — input data (train/test CSV files)
+├── model/ — saved models
+│ └── loan_model.pkl
+├── src/ — code for preprocessing and model building
+│ ├── data_preprocessing.py
+│ ├── pipeline.py
+│ └── model_train.py
+├── EDA.py — exploratory data analysis
+├── predict.py — makes predictions on new data
+└── prognosis.csv — prediction results
 
 ## Results
 - The model demonstrated an average accuracy of approximately **77%** on the test data after hyperparameter optimization and sample balancing
